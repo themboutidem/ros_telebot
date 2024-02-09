@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find kortex_driver)/launch/kortex_driver.launch"/>
+    <node name = "move_arm_subscriber" pkg = "telebot1_control" type = "move_arm_subscriber.py"/>
+</launch>
