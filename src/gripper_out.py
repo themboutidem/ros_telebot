@@ -11,7 +11,7 @@ def float32_publisher():
     pub = rospy.Publisher('/gripper_signal', Float32, queue_size=10)
 
     # Set the loop rate (in Hz)
-    rate = rospy.Rate(1)  # 1 Hz
+    rate = rospy.Rate(2)  # 1 Hz
 
     # Main loop
     while not rospy.is_shutdown():
