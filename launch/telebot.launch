@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find kortex_driver)/launch/kortex_driver.launch"/>
+    <node name = "gripper_subscriber" pkg = "telebot_agent" type = "gripper_subscriber.py"/>
+</launch>
