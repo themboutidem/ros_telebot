@@ -1,4 +1,15 @@
 <launch>
-    <include file="$(find kortex_driver)/launch/kortex_driver.launch"/>
-    <node name = "move_arm_subscriber" pkg = "telebot1_control" type = "move_arm_subscriber.py"/>
+    <arg name="ip_address" default="192.168.1.12"/>
+    <arg name="robot_name" default="telebot_right_arm"/>
+
+    <include file="$(find kortex_driver)/launch/kortex_driver.launch">
+        <arg name="robot_name" value="$(arg robot_name)"/>
+        <arg name="ip_address" value="$(arg ip_address)"/>
+    </include>
+
+    <node pkg="telebot_agent" type="right_imu_subscriber.py" name="right_imu_subscriber" output="screen">
+        <param name="ip_address" value="$(arg ip_address)"/>
+        <param name="robot_name" value="$(arg robot_name)"/>
+    </node>
 </launch>
+
