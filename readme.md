@@ -1,4 +1,4 @@
-# telebot_kortex
+# ros_telebot
 Telebot is our general-purpose implementation of a controller for a Telepresence Robot. It builds on the ROS Kortex Package from Kinova. This repository contains the ROS Kortex packages as well as the telebot_agent package we developed. 
 
 Before you use our package, first install the Kortex API, documentation for which can be found in the [GitHub Kortex repository](https://github.com/Kinovarobotics/kortex)." Thereafter, follow the instructions below to download and build your workspace.  
