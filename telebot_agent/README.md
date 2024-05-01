@@ -7,7 +7,7 @@ This node allows communication between a telebot_controller [composed of an IMU 
 ## Usage
 
 * Ensure both the "controller" and "agent" are connected to the same virtual network. We suggest [Husarnet's VPN service](https://husarion.com/tutorials/ros-tutorials/6-robot-network/).
-* Run the kortex_driver node by following the instructions here in the [README](/ros_telebot/kortex_driver)
+* Run the kortex_driver node by following the instructions here in the [README](/kortex_driver)
 * Run this terminal command to launch the gripper_subscriber node:
 ```
     rosrun telebot_agent right_gripper_subscriber.py
